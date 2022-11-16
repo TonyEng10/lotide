@@ -13,12 +13,14 @@ function eqArrays(arr1, arr2) {
     return false;
   }
   for (let i = 0; i < arr1.length; i++) {// loop checks each index of array to see if matches with false return first
-    if (arr1[i] !== arr2[i]) { 
+    if (arr1[i] !== arr2[i]) {
       return false;
-    } 
-  } 
-  return true;// other wise return true after the for loop runs through 
+    }
   }
+  return true;// other wise return true after the for loop runs through 
+}
+
+
 
 eqArrays([1, 2, 3], [1, 2, 3]) // => true
 eqArrays([1, 2, 3], [3, 2, 1]) // => false
