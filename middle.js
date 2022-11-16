@@ -19,7 +19,7 @@ const assertArraysEqual = function (arg) {
   return (`✅✅✅ Assertion Passed`);
 }
 
-const middle = function(array) {
+const middle = function (array) {
   //checks array and outputs the middle elements. 
   //odd number array only the middle and even number array the middle 2 elements
   //need to loop through array somehow
@@ -32,19 +32,10 @@ const middle = function(array) {
   if (array.length % 2 === 0) {
     return array.splice((Math.floor(array.length / 2) - 1), 2);
   }
-  
-  // if (array.length % 2 === 0) {
-  //   array.slice()
-  // }
-  // // // for (let i = 0; i < array.length; i++) {
-  // // console.log(array.length);
-  // }
-  //count array index values to see if odd or even
-  //then pump out value based on odd or even 
 }
 console.log(middle([1, 2, 3, 4, 5]));
 console.log(middle([1, 2, 3, 4]));
 console.log(middle([1, 2]));
 console.log(middle([1]));
 
-console.log(assertArraysEqual(eqArrays(middle(([1, 2, 3, 4, 5]) ),[3])));
+console.log(assertArraysEqual(eqArrays(middle(([1, 2, 3, 4, 5])), [3])));
