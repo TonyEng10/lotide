@@ -37,7 +37,7 @@ const without = function (ar1, ar2) {
   }
 }
 console.log(without([1, 2, 3], [1]));
-// console.log(assertArraysEqual(eqArrays(without([1, 2, 3], [1])), ([2, 3])));
+console.log(assertArraysEqual(eqArrays(without([1, 2, 3], [1]), [2, 3])));
 // if it matches then remove from array
 //  
 // // }
