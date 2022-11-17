@@ -20,9 +20,6 @@ const assertArraysEqual = function (arg) {
 }
 
 const middle = function (array) {
-  //checks array and outputs the middle elements. 
-  //odd number array only the middle and even number array the middle 2 elements
-  //need to loop through array somehow
   if (array.length <= 2) {
     return [];
   }
