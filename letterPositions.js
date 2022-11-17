@@ -21,14 +21,14 @@ function eqArrays(arr1, arr2) {
 }
 
 
-const letterPositions = function(sentence, itemsToCount) {
+const letterPositions = function (sentence, itemsToCount) {
   const results = {};
-  
-  for (let i = 0; i < sentence.length; i++) {
-   let item = sentence[i]
+
+  for (let i = 0; i < sentence.length; i++) {// normal c loop better for finding index related info
+    let item = sentence[i]// this shows the address of the sentence very important to remember. variable item was used to rep it and make the whole thing work
     if (item !== " ") {
       if (results[item]) {
-        results[item].push(i);
+        results[item].push(i);// when doing "hello" issue was when "l" showed up in results already so it was just adding 1 to it when i did +=... had to push to [] using [i]
       } else {
         results[item] = [i];
       }
