@@ -15,7 +15,7 @@ if (keys1.length !== keys2.length) {
 }
 for (let key of keys1) {
   if (Array.isArray(object1[key]) & Array.isArray(object2[key])) {//this was the last thing added to try and eqArrays in check
-    eqArrays(object1[key], object2[key]);// line 17-19 can be adjusted or deleted 
+    return eqArrays(object1[key], object2[key]);// line 17-19 can be adjusted or deleted 
   }//
   if (object1[key] !== object2[key]) {
     return false;
