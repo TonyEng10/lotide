@@ -1,25 +1,25 @@
-function eqArrays(arr1, arr2) {
-  let strArr1 = arr1.length;
-  let strArr2 = arr2.length;
-  if (strArr1 !== strArr2) {
-    return false;
-  }
-  for (let i = 0; i < arr1.length; i++) {
-    if (arr1[i] !== arr2[i]) {
-      return false;
-    }
-  }
-  return true;
-}
+// function eqArrays(arr1, arr2) {
+//   let strArr1 = arr1.length;
+//   let strArr2 = arr2.length;
+//   if (strArr1 !== strArr2) {
+//     return false;
+//   }
+//   for (let i = 0; i < arr1.length; i++) {
+//     if (arr1[i] !== arr2[i]) {
+//       return false;
+//     }
+//   }
+//   return true;
+// }
 
-const assertArraysEqual = function (arg) {
-  if (!arg) {
-    return (`🛑🛑🛑 🫠 Assertion Failed`);
-  }
-  return (`✅✅✅ Assertion Passed`);
-}
-// let arr1 = [4, 2, 3]
-// let arr2 = [5, 2, 3]
+// const assertArraysEqual = function (arg) {
+//   if (!arg) {
+//     return (`🛑🛑🛑 🫠 Assertion Failed`);
+//   }
+//   return (`✅✅✅ Assertion Passed`);
+// }
+// // let arr1 = [4, 2, 3]
+// // let arr2 = [5, 2, 3]
 
 const without = function (ar1, ar2) {
   // function has 2 parameters, first one is array second one is what u want to remove from array
@@ -35,9 +35,12 @@ const without = function (ar1, ar2) {
     // for (let j = 0; j < arr1[i]; j++) {
     // console.log("world");
   }
-}
-console.log(without([1, 2, 3], [1]));
-console.log(assertArraysEqual(eqArrays(without([1, 2, 3], [1]), [2, 3])));
+};
+
+module.exports = without;
+
+// console.log(without([1, 2, 3], [1]));
+// console.log(assertArraysEqual(eqArrays(without([1, 2, 3], [1]), [2, 3])));
 // if it matches then remove from array
 //  
 // // }
