@@ -8,10 +8,9 @@ const assertArraysEqual = function(arg) {
 }
 // eqArrays([1, 2], [1, 2]);
  
-
-console.log(assertArraysEqual(eqArrays([1, 3], [1, 2])));
-
-console.log(eqArrays([1, 3], [1, 2]));
-console.log(eqArrays([1, 2], [1, 2]));
-
 module.exports = assertArraysEqual;
+
+// console.log(assertArraysEqual(eqArrays([1, 3], [1, 2])));
+
+// console.log(eqArrays([1, 3], [1, 2]));
+// console.log(eqArrays([1, 2], [1, 2]));
