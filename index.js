@@ -15,21 +15,20 @@ const countLetters = require('./countLetters');
 const countOnly = require('./countOnly');
 
 
-
 module.exports = {
-  head: head,
-  tail: tail,
-  middle: middle,
-  takeUntil: takeUntil,
-  without: without,
-  map: map,
-  letterPositions: letterPositions,
-  findKey: findKey,
-  findKeyByValue: findKeyByValue,
-  eqArrays: eqArrays,
-  eqObjects: eqObjects,
-  assertEqual: assertEqual,
-  assertArraysEqual: assertArraysEqual,
-  countLetters: countLetters,
-  countOnly: countOnly
+  head,
+  tail,
+  middle,
+  takeUntil,
+  without,
+  map,
+  letterPositions,
+  findKey,
+  findKeyByValue,
+  eqArrays,
+  eqObjects,
+  assertEqual,
+  assertArraysEqual,
+  countLetters,
+  countOnly
 };
